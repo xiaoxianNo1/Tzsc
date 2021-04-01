@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.xiaoxian</groupId>
-  <artifactId>TzscMvc</artifactId>
+  <artifactId>ssmTest</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>TzscMvc Maven Webapp</name>
+  <name>ssmTest Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -223,20 +223,22 @@
     <!-- 日志文件管理包 -->
     <!-- log start -->
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>${log4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.10.0</version>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.10.0</version>
     </dependency>
+
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>${slf4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-web</artifactId>
+      <version>2.9.1</version>
     </dependency>
+    <!-- log end -->
     <!--上传-->
     <dependency>
       <groupId>commons-fileupload</groupId>
@@ -248,7 +250,7 @@
       <artifactId>commons-io</artifactId>
       <version>2.4</version>
     </dependency>
-    <!-- log end -->
+
 
     <dependency>
       <groupId>org.mybatis.generator</groupId>
